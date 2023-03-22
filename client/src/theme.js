@@ -107,10 +107,22 @@ export const themeSettings = (mode) => {
     },
     typography: {
       fontFamily: ["Inter", "sans-serif"].join(","),
-        fontSize: 12,
-        h1: {
-          
-      }
+      fontSize: 12,
+      h1: {
+        fontFamily: ["Inter", "san-serif"].join(","),
+        fontSize: 40,
+      },
+      h2: {
+        fontFamily: ["Inter", "san-serif"].join(","),
+        fontSize: 32,
+      },
+      h3: {
+        fontFamily: ["Inter", "san-serif"].join(","),
+        fontSize: 24,
+      },
+      h4: {
+        fontFamily: ["Inter", "san-serif"].join(","),
+      },
     },
   };
 };

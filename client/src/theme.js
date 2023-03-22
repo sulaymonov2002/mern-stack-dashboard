@@ -122,6 +122,15 @@ export const themeSettings = (mode) => {
       },
       h4: {
         fontFamily: ["Inter", "san-serif"].join(","),
+        fontSize: 16,
+      },
+      h5: {
+        fontFamily: ["Inter", "san-serif"].join(","),
+        fontSize: 16,
+      },
+      h6: {
+        fontFamily: ["Inter", "san-serif"].join(","),
+        fontSize: 14,
       },
     },
   };

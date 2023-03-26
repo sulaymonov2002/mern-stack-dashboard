@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { setMode } from "state";
+import FlexBetween from "components/FlexBetween";
 import { useDispatch } from "react-redux";
+import { setMode } from "state";
+import profileImage from "assets/profile.jpeg";
 import {
   LightModeOutlined,
   DarkModeOutlined,
@@ -11,13 +13,16 @@ import {
 } from "@mui/icons-material";
 import {
   AppBar,
+  Button,
+  Box,
+  Typography,
   IconButton,
   InputBase,
   Toolbar,
+  Menu,
+  MenuItem,
   useTheme,
 } from "@mui/material";
-import FlexBetween from "components/FlexBetween";
-import profileImage from "assets/profile.jpeg";
 
 const Navbar = () => {
   const dispatch = useDispatch();

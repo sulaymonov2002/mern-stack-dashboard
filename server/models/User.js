@@ -19,4 +19,9 @@ const UserSchema = new mongoose.Schema({
     min: 5,
   },
   cit: String,
+  state: String,
+  country: String,
+  occupation: String,
+  phoneNumber: String,
+  transactions: Array,
 });

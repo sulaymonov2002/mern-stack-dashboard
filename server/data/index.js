@@ -1,3 +1,4 @@
+
 export const dataAffiliateStat = [
   {
     _id: "6371251df03239e680000033",

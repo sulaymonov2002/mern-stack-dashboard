@@ -192,7 +192,6 @@ const Sidebar = ({
               })}
             </List>
           </Box>
-          {/* 
           <Box position="absolute" bottom="2rem">
             <Divider />
             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
@@ -211,7 +210,7 @@ const Sidebar = ({
                   fontSize="0.9rem"
                   sx={{ color: theme.palette.secondary[100] }}
                 >
-                  {user.name}
+                  {/* {user.name} */}
                 </Typography>
                 <Typography
                   fontSize="0.8rem"
@@ -221,13 +220,10 @@ const Sidebar = ({
                 </Typography>
               </Box>
               <SettingsOutlined
-                sx={{
-                  color: theme.palette.secondary[300],
-                  fontSize: "25px ",
-                }}
+                sx={{ color: theme.palette.secondary[300], fontSize: "25px" }}
               />
             </FlexBetween>
-          </Box> */}
+          </Box>
         </Drawer>
       )}
     </Box>

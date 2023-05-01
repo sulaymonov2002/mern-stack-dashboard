@@ -24,9 +24,14 @@ import {
   useTheme,
 } from "@mui/material";
 
-const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
+const Navbar = ({
+  user,
+  isSidebarOpen,
+  setIsSidebarOpen,
+}) => {
   const dispatch = useDispatch();
   const theme = useTheme();
+
   const [anchorEl, setAnchorEl] = useState(null);
   const isOpen = Boolean(anchorEl);
   const handleClick = (event) => setAnchorEl(event.currentTarget);
@@ -76,7 +81,43 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
                 textTransform: "none",
                 gap: "1rem",
               }}
-            ></Button>
+            >
+              <Box
+                component="img"
+                alt="profile"
+                src={profileImage}
+                height="32px"
+                width="32px"
+                borderRadius="50%"
+                sx={{ objectFit: "cover" }}
+              />
+              <Box textAlign="left">
+                <Typography
+                  fontWeight="bold"
+                  fontSize="0.85rem"
+                  sx={{ color: theme.palette.secondary[100] }}
+                >
+                  {user}
+                </Typography>
+                <Typography
+                  fontSize="0.75rem"
+                  sx={{ color: theme.palette.secondary[200] }}
+                >
+                  {user}
+                </Typography>
+              </Box>
+              <ArrowDropDownOutlined
+                sx={{ color: theme.palette.secondary[300], fontSize: "25px" }}
+              />
+            </Button>
+            <Menu
+              anchorEl={anchorEl}
+              open={isOpen}
+              onClose={handleClose}
+              anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            >
+              <MenuItem onClick={handleClick}>Log Out </MenuItem>
+            </Menu>
           </FlexBetween>
         </FlexBetween>
       </Toolbar>

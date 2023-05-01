@@ -24,11 +24,7 @@ import {
   useTheme,
 } from "@mui/material";
 
-const Navbar = ({
-  user,
-  isSidebarOpen,
-  setIsSidebarOpen,
-}) => {
+const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
   const dispatch = useDispatch();
   const theme = useTheme();
 
@@ -97,13 +93,13 @@ const Navbar = ({
                   fontSize="0.85rem"
                   sx={{ color: theme.palette.secondary[100] }}
                 >
-                  {user}
+                  {user.name}
                 </Typography>
                 <Typography
                   fontSize="0.75rem"
                   sx={{ color: theme.palette.secondary[200] }}
                 >
-                  {user}
+                  {user.occupation}
                 </Typography>
               </Box>
               <ArrowDropDownOutlined

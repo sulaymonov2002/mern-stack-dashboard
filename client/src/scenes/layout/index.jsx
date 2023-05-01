@@ -22,7 +22,7 @@ const Layout = () => {
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
       />
-      <Box flexGrow={1}>
+      <Box flexGrow={1}> 
         <Navbar
           user={data || {}}
           isSidebarOpen={isSidebarOpen}

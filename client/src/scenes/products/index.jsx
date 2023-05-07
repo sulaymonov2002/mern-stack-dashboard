@@ -16,10 +16,11 @@ import Header from "components/Header";
 
 const Products = () => {
   const { data, isLoading } = useGetProductsQuery();
+  const isNonMobile = useMediaQuery("(min-width: 1000px)");
   console.log("data", data);
 
   return (
-    <Box>
+    <Box m="1.5rem 2rem">
       <Header title="PRODUCTS" subtitle="See your list of products." />
     </Box>
   );

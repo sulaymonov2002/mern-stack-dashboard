@@ -4,6 +4,7 @@ import Dashboard from "scenes/dashboard";
 import Layout from "scenes/layout";
 import Products from "scenes/products";
 import Customers from "scenes/customers";
+
 import { useSelector } from "react-redux";
 import { createTheme } from "@mui/material/styles";
 import { CssBaseline, ThemeProvider } from "@mui/material";

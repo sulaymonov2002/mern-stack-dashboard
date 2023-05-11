@@ -4,6 +4,7 @@ import Dashboard from "scenes/dashboard";
 import Layout from "scenes/layout";
 import Products from "scenes/products";
 import Customers from "scenes/customers";
+import Transactions from "scenes/transactions";
 
 import { useSelector } from "react-redux";
 import { createTheme } from "@mui/material/styles";
@@ -24,6 +25,7 @@ function App() {
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/products" element={<Products />} />
               <Route path="/customers" element={<Customers />} />
+              <Route path="/transactions" element={<Transactions />} />
             </Route>
           </Routes>
         </ThemeProvider>

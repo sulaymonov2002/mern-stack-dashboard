@@ -9,6 +9,7 @@ import Geography from "scenes/geography";
 import Overview from "scenes/overview";
 import Daily from "scenes/daily";
 import Monthly from "scenes/monthly";
+import Breakdown from "scenes/breakdown";
 
 import { useSelector } from "react-redux";
 import { createTheme } from "@mui/material/styles";
@@ -34,6 +35,7 @@ function App() {
               <Route path="/overview" element={<Overview />} />
               <Route path="/daily" element={<Daily />} />
               <Route path="/monthly" element={<Monthly />} />
+              <Route path="breakdown" element={<Breakdown />} />
             </Route>
           </Routes>
         </ThemeProvider>
